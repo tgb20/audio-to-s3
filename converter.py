@@ -1,4 +1,3 @@
-from typing import Any
 from pydub import AudioSegment
 import os, datetime
 
@@ -25,8 +24,6 @@ for name in recordings.keys():
     files = recordings[name]
     files.sort()
     recordings[name] = files
-
-
 
 # Split list by times
 for name in recordings.keys():
